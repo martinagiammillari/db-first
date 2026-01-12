@@ -1,2 +1,55 @@
 Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti
-delle auto usate messe in vendita da un concessionario
+delle auto usate messe in vendita da un concessionario (ho deciso che ha un sito vetrina)
+
+DISCLAIMER!!!! non ci capisco niente di auto quindi la lista è stata generata da ai, compilata poi successivamente da me medesima <3
+baciotti stellari :*
+
+COLONNE: 
+id_auto - UNSIGNED INT - PRIMARY_KEY - UNIQUE - NOT NULL - AUTOINCREMENT
+vin (numero telaio, codice alfanumerico) - VARCHAR(17) - UNIQUE - NOT NULL
+targa - VARCHAR(10) - UNIQUE - NOT NULL
+marca - VARCHAR(50) - NOT NULL
+modello - VARCHAR(50) - NOT NULL
+allestimento - VARCHAR(255) - NULL
+anno_immatricolazione - YEAR - NOT NULL
+data_immatricolazione - DATE - NULL
+chilometraggio - UNSIGNED INT - NOT NULL
+numero_proprietari_precedenti - UNSIGNED INT - NOT NULL - DEFAULT(1)
+condizione - VARCHAR(255) - NOT NULL - DEFAULT ("OTTIMO STATO")
+alimentazione - VARCHAR(20) - NOT NULL 
+motorizzazione - VARCHAR(255) - NULL 
+cilindrata - VARCHAR(255) - NOT NULL 
+tipo_cambio - VARCHAR(20) - NOT NULL 
+numero_marce - UNSIGNED TINYINT - NOT NULL - DEFAULT(5)
+classe_emissioni - VARCHAR(15) - NULL 
+consumo_medio - VARCHAR(255) - NULL 
+colore_esterno - VARCHAR(30) - NOT NULL 
+colore_interno - VARCHAR(30) - NULL 
+materiale_interni - VARCHAR(255) - NULL 
+numero_porte - UNSIGNED INT - NOT NULL - DEFAULT(3)
+numero_posti - UNSIGNED INT - NOT NULL - DEFAULT(2)
+optional - VARCHAR(255) - NULL 
+sistemi_sicurezza -UNSIGNED TINYINT (valore booleano) - null
+climatizzatore -UNSIGNED TINYINT (valore booleano) - null
+navigatore -UNSIGNED TINYINT (valore booleano) - null
+sensori_parcheggio -UNSIGNED TINYINT (valore booleano) - null
+telecamera_posteriore -UNSIGNED TINYINT (valore booleano) - null
+cerchi_lega -UNSIGNED TINYINT (valore booleano) - null
+fari_led -UNSIGNED TINYINT (valore booleano) - null
+revisioni_valide_fino - DATE - NULL
+ultimo_tagliando_data - DATE - NULL
+incidentata -UNSIGNED TINYINT (valore booleano) - null
+provenienza - VARCHAR(255) - NULL 
+garanzia_mesi - UNSIGNED INT - NOT NULL
+prezzo_vendita - DECIMAL (10,2) - NOT NULL
+prezzo_listino - DECIMAL (10,2) - NULL
+iva_inclusa -UNSIGNED TINYINT (valore booleano) - null
+finanziabile -UNSIGNED TINYINT (valore booleano) - null
+foto_principale(URL) - VARCHAR(255) - NOT NULL 
+sede_concessionario - VARCHAR(255) - NOT NULL 
+venditore_responsabile - VARCHAR(255) - NULL 
+data_inserimento -DATE -NULL
+data_aggiornamento -DATE -NULL
+data_pubblicazione -DATE -NULL
+visibile_online  -UNSIGNED TINYINT (valore booleano) - null
+note_interne - TEXT - NULL
