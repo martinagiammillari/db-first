@@ -46,10 +46,7 @@ prezzo_listino - DECIMAL (10,2) - NULL
 iva_inclusa -UNSIGNED TINYINT (valore booleano) - null
 finanziabile -UNSIGNED TINYINT (valore booleano) - null
 foto_principale(URL) - VARCHAR(255) - NOT NULL 
-sede_concessionario - VARCHAR(255) - NOT NULL 
-venditore_responsabile - VARCHAR(255) - NULL 
 data_inserimento -DATE -NULL
 data_aggiornamento -DATE -NULL
 data_pubblicazione -DATE -NULL
-visibile_online  -UNSIGNED TINYINT (valore booleano) - null
 note_interne - TEXT - NULL
